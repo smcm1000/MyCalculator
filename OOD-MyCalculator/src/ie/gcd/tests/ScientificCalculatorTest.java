@@ -4,6 +4,7 @@
 package ie.gcd.tests;
 
 import static org.junit.Assert.*;
+import ie.gcd.myCalculator.ScientificCalculator;
 
 import org.junit.After;
 import org.junit.Before;
@@ -34,7 +35,8 @@ public class ScientificCalculatorTest {
 	 */
 	@Test
 	public void testAdd() {
-		fail("Not yet implemented");
+		ScientificCalculator c = new ScientificCalculator();
+		assertEquals(5, c.add(2, 3));
 	}
 
 }
